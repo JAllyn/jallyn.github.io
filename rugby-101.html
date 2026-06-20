@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rugby 101 | Learn the Game | Riverlands Golden Boars</title>
+    <meta name="description" content="Rugby 101 - Learn the basics of rugby union. Scoring, positions, rules, and why people love the game. Perfect for new players joining Riverlands RFC.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        .tail-container { font-family: 'Inter', system_ui, sans-serif; }
+        .nav-link { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+        .nav-link:hover { color: #C5A04F; transform: translateY(-1px); }
+        .gold-btn { background-color: #C5A04F; color: #0F3D2E; font-weight: 600; transition: all 0.3s ease; }
+        .gold-btn:hover { background-color: #B38B3D; transform: translateY(-2px); }
+        .rule-card { transition: transform .2s ease, box-shadow .2s ease; }
+        .rule-card:hover { transform: translateY(-4px); box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.15); }
+    </style>
+</head>
+<body class="tail-container bg-zinc-950 text-zinc-200">
+    <!-- Navigation -->
+    <nav class="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-50">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="px-8 py-5 flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-x-3 group">
+                    <img src="images/logo.jpg" alt="Riverlands Golden Boars Logo" class="h-11 w-auto rounded-lg">
+                    <div>
+                        <div class="font-bold text-2xl tracking-tighter">RIVERLANDS</div>
+                        <div class="text-[10px] text-amber-400 -mt-1 tracking-[2px] font-semibold">GOLDEN BOARS</div>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="index.html" class="nav-link text-zinc-300 hover:text-white">Home</a>
+                    <a href="history.html" class="nav-link text-zinc-300 hover:text-white">History</a>
+                    <a href="practices.html" class="nav-link text-zinc-300 hover:text-white">Practices</a>
+                    <a href="rugby-101.html" class="nav-link text-white font-semibold">Rugby 101</a>
+                    <a href="events.html" class="nav-link text-zinc-300 hover:text-white">Events</a>
+                    <a href="officers.html" class="nav-link text-zinc-300 hover:text-white">Officers</a>
+                </div>
+
+                <div class="hidden md:flex items-center gap-x-3">
+                    <a href="join.html" class="px-5 py-2.5 text-sm font-semibold rounded-xl border border-zinc-700 hover:bg-zinc-800 transition-colors">Join Us</a>
+                    <a href="mailto:headcoach@riverlandsrugby.com" class="gold-btn px-6 py-2.5 text-sm rounded-xl flex items-center gap-x-2">
+                        <i class="fas fa-envelope"></i><span>Play Rugby</span>
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center text-zinc-300 hover:text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 border-t border-zinc-800 px-6 py-4">
+            <div class="flex flex-col gap-y-1 text-sm">
+                <a href="index.html" class="py-3 px-4 hover:bg-zinc-800 rounded-xl">Home</a>
+                <a href="history.html" class="py-3 px-4 hover:bg-zinc-800 rounded-xl">History</a>
+                <a href="practices.html" class="py-3 px-4 hover:bg-zinc-800 rounded-xl">Practices</a>
+                <a href="rugby-101.html" class="py-3 px-4 hover:bg-zinc-800 rounded-xl font-medium text-white">Rugby 101</a>
+                <a href="events.html" class="py-3 px-4 hover:bg-zinc-800 rounded-xl">Events</a>
+                <a href="officers.html" class="py-3 px-4 hover:bg-zinc-800 rounded-xl">Officers</a>
+                <div class="pt-3 mt-2 border-t border-zinc-800 flex flex-col gap-y-2">
+                    <a href="join.html" class="py-3 px-4 text-center rounded-2xl border border-zinc-700 font-medium">Join the Boars</a>
+                    <a href="mailto:headcoach@riverlandsrugby.com" class="gold-btn py-3 px-4 text-center rounded-2xl flex items-center justify-center gap-x-2"><i class="fas fa-envelope"></i><span>Contact Head Coach</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-zinc-900 border-b border-zinc-800">
+        <div class="max-w-screen-2xl mx-auto px-6 py-12">
+            <div class="max-w-3xl">
+                <div class="text-xs uppercase tracking-[3px] text-amber-400 font-semibold mb-2">NEW TO RUGBY?</div>
+                <h1 class="text-6xl md:text-7xl font-black tracking-tighter">Rugby 101</h1>
+                <p class="mt-4 text-2xl text-zinc-300">"Rugby is a game in which the object is to carry the ball over the opponent's goal line and force it to the ground to score."</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-screen-2xl mx-auto px-6 py-14">
+        <!-- Basics -->
+        <div class="max-w-4xl mx-auto">
+            <div class="prose prose-invert text-lg max-w-none">
+                <p>Rugby Union (the version we play) is a fast-paced, physical, and highly strategic team sport played by two teams of 15 players. It is known for its emphasis on sportsmanship, respect for the referee, and the unique "ruck" and "maul" contests.</p>
+            </div>
+
+            <!-- Scoring -->
+            <div class="mt-14">
+                <h3 class="font-bold text-3xl tracking-tight mb-6">How to Score</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div class="rule-card bg-zinc-900 border border-zinc-700 rounded-3xl p-6">
+                        <div class="text-emerald-400 text-5xl font-black">5</div>
+                        <div class="font-bold text-xl mt-1">Try</div>
+                        <div class="text-sm text-zinc-400 mt-2">Grounding the ball in the opponent's in-goal area (try zone).</div>
+                    </div>
+                    <div class="rule-card bg-zinc-900 border border-zinc-700 rounded-3xl p-6">
+                        <div class="text-emerald-400 text-5xl font-black">2</div>
+                        <div class="font-bold text-xl mt-1">Conversion</div>
+                        <div class="text-sm text-zinc-400 mt-2">Successful kick after a try (from a tee or drop kick).</div>
+                    </div>
+                    <div class="rule-card bg-zinc-900 border border-zinc-700 rounded-3xl p-6">
+                        <div class="text-emerald-400 text-5xl font-black">3</div>
+                        <div class="font-bold text-xl mt-1">Penalty Goal</div>
+                        <div class="text-sm text-zinc-400 mt-2">Kick through the posts after an infringement by the opposition.</div>
+                    </div>
+                    <div class="rule-card bg-zinc-900 border border-zinc-700 rounded-3xl p-6">
+                        <div class="text-emerald-400 text-5xl font-black">3</div>
+                        <div class="font-bold text-xl mt-1">Drop Goal</div>
+                        <div class="text-sm text-zinc-400 mt-2">Drop kick through the posts during open play (rare but exciting!).</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Concepts -->
+            <div class="mt-14">
+                <h3 class="font-bold text-3xl tracking-tight mb-6">Key Concepts &amp; Rules</h3>
+                <div class="grid md:grid-cols-3 gap-6 text-sm">
+                    <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-7">
+                        <div class="font-semibold text-lg mb-3 flex items-center gap-x-2"><i class="fas fa-handshake text-amber-400"></i> <span>Offside</span></div>
+                        <p class="text-zinc-300">Players must stay behind the ball or the hindmost foot in rucks/mauls. Being offside is one of the most common infringements.</p>
+                    </div>
+                    <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-7">
+                        <div class="font-semibold text-lg mb-3 flex items-center gap-x-2"><i class="fas fa-users text-amber-400"></i> <span>Ruck &amp; Maul</span></div>
+                        <p class="text-zinc-300">When the ball carrier is tackled, a ruck forms. Players bind and compete for the ball. A maul is when the ball carrier is held but not brought to ground.</p>
+                    </div>
+                    <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-7">
+                        <div class="font-semibold text-lg mb-3 flex items-center gap-x-2"><i class="fas fa-shield-alt text-amber-400"></i> <span>Tackle</span></div>
+                        <p class="text-zinc-300">Tackles must be below the shoulders. The tackled player must release the ball immediately. High tackles and dangerous play are penalized heavily.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 bg-zinc-900 border-l-4 border-amber-400 pl-7 py-1 text-sm max-w-prose">
+                <strong>Pro Tip from the Boars:</strong> Rugby is a game of possession, territory, and relentless effort. Fitness, teamwork, and smart decision-making matter as much as size and strength.
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-black border-t border-zinc-800 pt-8 pb-8">
+        <div class="max-w-screen-2xl mx-auto px-6 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+            <div>© 2026 Riverlands Rugby Football Club — Fear the Boars</div>
+            <a href="index.html" class="hover:text-white">Back to Home</a>
+        </div>
+    </footer>
+
+    <script>
+        function setupMobileMenu() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                    const icon = btn.querySelector('i');
+                    if (icon) { icon.classList.toggle('fa-bars'); icon.classList.toggle('fa-times'); }
+                });
+            }
+        }
+        window.onload = setupMobileMenu;
+    </script>
+</body>
+</html>

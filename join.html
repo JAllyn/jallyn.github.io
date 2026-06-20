@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Golden Boars | Riverlands Rugby</title>
+    <meta name="description" content="Interested in playing rugby with Riverlands Golden Boars? Contact our head coach or president to get started. All experience levels welcome.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        .tail-container { font-family: 'Inter', system_ui, sans-serif; }
+        .nav-link { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+        .nav-link:hover { color: #C5A04F; transform: translateY(-1px); }
+        .gold-btn { background-color: #C5A04F; color: #0F3D2E; font-weight: 600; transition: all 0.3s ease; }
+        .gold-btn:hover { background-color: #B38B3D; transform: translateY(-2px); }
+    </style>
+</head>
+<body class="tail-container bg-zinc-950 text-zinc-200">
+    <!-- Navigation -->
+    <nav class="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-50">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="px-8 py-5 flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-x-3 group">
+                    <img src="images/logo.jpg" alt="Riverlands Golden Boars Logo" class="h-11 w-auto rounded-lg">
+                    <div>
+                        <div class="font-bold text-2xl tracking-tighter">RIVERLANDS</div>
+                        <div class="text-[10px] text-amber-400 -mt-1 tracking-[2px] font-semibold">GOLDEN BOARS</div>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="index.html" class="nav-link text-zinc-300 hover:text-white">Home</a>
+                    <a href="history.html" class="nav-link text-zinc-300 hover:text-white">History</a>
+                    <a href="practices.html" class="nav-link text-zinc-300 hover:text-white">Practices</a>
+                    <a href="rugby-101.html" class="nav-link text-zinc-300 hover:text-white">Rugby 101</a>
+                    <a href="events.html" class="nav-link text-zinc-300 hover:text-white">Events</a>
+                    <a href="officers.html" class="nav-link text-zinc-300 hover:text-white">Officers</a>
+                </div>
+
+                <div class="hidden md:flex items-center gap-x-3">
+                    <a href="join.html" class="px-5 py-2.5 text-sm font-semibold rounded-xl border border-amber-400 text-amber-400">Join Us</a>
+                    <a href="mailto:headcoach@riverlandsrugby.com" class="gold-btn px-6 py-2.5 text-sm rounded-xl flex items-center gap-x-2">
+                        <i class="fas fa-envelope"></i><span>Play Rugby</span>
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center text-zinc-300 hover:text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 border-t border-zinc-800 px-6 py-4">
+            <div class="flex flex-col gap-y-1 text-sm">
+                <a href="index.html" class="py-3 px-4 hover:bg-zinc-800 rounded-xl">Home</a>
+                <a href="history.html" class="py-3 px-4 hover:bg-zinc-800 rounded-xl">History</a>
+                <a href="practices.html" class="py-3 px-4 hover:bg-zinc-800 rounded-xl">Practices</a>
+                <a href="rugby-101.html" class="py-3 px-4 hover:bg-zinc-800 rounded-xl">Rugby 101</a>
+                <a href="events.html" class="py-3 px-4 hover:bg-zinc-800 rounded-xl">Events</a>
+                <a href="officers.html" class="py-3 px-4 hover:bg-zinc-800 rounded-xl">Officers</a>
+                <div class="pt-3 mt-2 border-t border-zinc-800 flex flex-col gap-y-2">
+                    <a href="join.html" class="py-3 px-4 text-center rounded-2xl border border-amber-400 font-medium text-amber-400">Join the Boars</a>
+                    <a href="mailto:headcoach@riverlandsrugby.com" class="gold-btn py-3 px-4 text-center rounded-2xl flex items-center justify-center gap-x-2"><i class="fas fa-envelope"></i><span>Contact Head Coach</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-screen-2xl mx-auto px-6 pt-14 pb-20">
+        <div class="max-w-2xl mx-auto text-center">
+            <div class="inline-block bg-emerald-900/30 text-emerald-400 text-xs tracking-[3px] font-semibold px-5 py-1.5 rounded-3xl mb-4">ALL ARE WELCOME</div>
+            
+            <h1 class="text-6xl md:text-7xl font-black tracking-tighter">Ready to<br>Fear the Boars?</h1>
+            
+            <p class="mt-6 text-xl text-zinc-300">Whether you're a seasoned rugby player, a former athlete looking for a new challenge, or completely new to the sport — we want you on our team.</p>
+        </div>
+
+        <div class="max-w-xl mx-auto mt-14">
+            <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-9 md:p-11">
+                <h3 class="font-bold text-2xl tracking-tight mb-6 text-center">Get Started Today</h3>
+                
+                <div class="space-y-5">
+                    <a href="mailto:headcoach@riverlandsrugby.com?subject=Interested%20in%20joining%20Riverlands%20Rugby%20-%20New%20Player" 
+                       class="gold-btn w-full flex items-center justify-center gap-x-3 py-4 text-lg rounded-2xl font-semibold">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <span>Email Head Coach Tyler Stephens</span>
+                    </a>
+                    
+                    <div class="text-center text-xs text-zinc-400">— or —</div>
+                    
+                    <a href="mailto:president@riverlandsrugby.com?subject=Interested%20in%20joining%20Riverlands%20Rugby" 
+                       class="w-full flex items-center justify-center gap-x-3 py-4 text-lg rounded-2xl font-semibold border border-zinc-600 hover:bg-zinc-800 transition-colors">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact President Jason Stine</span>
+                    </a>
+                </div>
+
+                <div class="mt-8 pt-7 border-t border-zinc-700 text-center text-sm text-zinc-300">
+                    <p>Include a bit about your rugby (or sports) background and when you'd like to come to a practice. We'll get back to you quickly.</p>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center text-xs text-zinc-400">
+                Practices are currently held Tuesdays (7s) and Thursdays.<br>
+                Location: Falmouth, Virginia area.
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-black border-t border-zinc-800 pt-8 pb-8">
+        <div class="max-w-screen-2xl mx-auto px-6 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+            <div>© 2026 Riverlands Rugby Football Club — Fear the Boars</div>
+            <a href="index.html" class="hover:text-white">Back to Home</a>
+        </div>
+    </footer>
+
+    <script>
+        function setupMobileMenu() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                    const icon = btn.querySelector('i');
+                    if (icon) { icon.classList.toggle('fa-bars'); icon.classList.toggle('fa-times'); }
+                });
+            }
+        }
+        window.onload = setupMobileMenu;
+    </script>
+</body>
+</html>
