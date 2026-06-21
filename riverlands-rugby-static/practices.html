@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Schedule | Riverlands Rugby Football Club</title>
+    <meta name="description" content="Current practice schedule for Riverlands Golden Boars rugby. Tuesdays and Thursdays, with 7s sessions in Falmouth, Virginia.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        .tail-container { font-family: 'Inter', system_ui, sans-serif; }
+        .nav-link { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+        .nav-link:hover { color: #C5A04F; transform: translateY(-1px); }
+        .gold-btn { background-color: #C5A04F; color: #0F3D2E; font-weight: 600; transition: all 0.3s ease; }
+        .gold-btn:hover { background-color: #B38B3D; transform: translateY(-2px); }
+    </style>
+</head>
+<body class="tail-container bg-zinc-950 text-zinc-200">
+    <!-- Navigation -->
+    <nav class="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-50">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="px-8 py-5 flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-x-3 group">
+                    <img src="images/logo.jpg" alt="Riverlands Golden Boars Logo" class="h-11 w-auto rounded-lg">
+                    <div>
+                        <div class="font-bold text-2xl tracking-tighter">RIVERLANDS</div>
+                        <div class="text-[10px] text-amber-400 -mt-1 tracking-[2px] font-semibold">GOLDEN BOARS</div>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="index.html" class="nav-link text-zinc-300 hover:text-white">Home</a>
+                    <a href="history.html" class="nav-link text-zinc-300 hover:text-white">History</a>
+                    <a href="practices.html" class="nav-link text-white font-semibold">Practices</a>
+                    <a href="rugby-101.html" class="nav-link text-zinc-300 hover:text-white">Rugby 101</a>
+                    <a href="events.html" class="nav-link text-zinc-300 hover:text-white">Events</a>
+                    <a href="officers.html" class="nav-link text-zinc-300 hover:text-white">Officers</a>
+                </div>
+
+                <div class="hidden md:flex items-center gap-x-3">
+                    <a href="join.html" class="px-5 py-2.5 text-sm font-semibold rounded-xl border border-zinc-700 hover:bg-zinc-800 transition-colors">Join Us</a>
+                    <a href="mailto:headcoach@riverlandsrugby.com" class="gold-btn px-6 py-2.5 text-sm rounded-xl flex items-center gap-x-2">
+                        <i class="fas fa-envelope"></i><span>Play Rugby</span>
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center text-zinc-300 hover:text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 border-t border-zinc-800 px-6 py-4">
+            <div class="flex flex-col gap-y-1 text-sm">
+                <a href="index.html" class="py-3 px-4 hover:bg-zinc-800 rounded-xl">Home</a>
+                <a href="history.html" class="py-3 px-4 hover:bg-zinc-800 rounded-xl">History</a>
+                <a href="practices.html" class="py-3 px-4 hover:bg-zinc-800 rounded-xl font-medium text-white">Practices</a>
+                <a href="rugby-101.html" class="py-3 px-4 hover:bg-zinc-800 rounded-xl">Rugby 101</a>
+                <a href="events.html" class="py-3 px-4 hover:bg-zinc-800 rounded-xl">Events</a>
+                <a href="officers.html" class="py-3 px-4 hover:bg-zinc-800 rounded-xl">Officers</a>
+                <div class="pt-3 mt-2 border-t border-zinc-800 flex flex-col gap-y-2">
+                    <a href="join.html" class="py-3 px-4 text-center rounded-2xl border border-zinc-700 font-medium">Join the Boars</a>
+                    <a href="mailto:headcoach@riverlandsrugby.com" class="gold-btn py-3 px-4 text-center rounded-2xl flex items-center justify-center gap-x-2"><i class="fas fa-envelope"></i><span>Contact Head Coach</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-zinc-900 border-b border-zinc-800">
+        <div class="max-w-screen-2xl mx-auto px-6 py-12">
+            <div class="max-w-2xl">
+                <div class="uppercase tracking-[3px] text-xs text-amber-400 font-semibold mb-1">ON THE PITCH</div>
+                <h1 class="text-6xl font-black tracking-tighter">Practice Schedule</h1>
+                <p class="mt-3 text-xl text-zinc-300">All players and prospective members are welcome. Come train with the Golden Boars.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-screen-2xl mx-auto px-6 py-14">
+        <div class="grid lg:grid-cols-5 gap-8">
+            
+            <!-- Main Schedule -->
+            <div class="lg:col-span-3">
+                <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-8 md:p-10">
+                    <h3 class="font-bold text-3xl tracking-tight mb-7 flex items-center gap-x-3">
+                        <i class="fas fa-clock text-amber-400"></i> 
+                        <span>Weekly Training</span>
+                    </h3>
+
+                    <div class="space-y-6">
+                        <!-- Tuesday -->
+                        <div class="flex gap-6 border-b border-zinc-700 pb-6">
+                            <div class="w-24 flex-shrink-0">
+                                <div class="text-amber-400 font-mono text-sm tracking-widest">TUESDAY</div>
+                                <div class="text-5xl font-black tracking-tighter text-white mt-1">7:00<span class="text-2xl align-super">PM</span></div>
+                            </div>
+                            <div class="flex-1 pt-1">
+                                <div class="font-semibold text-xl">Rugby 7s Practice</div>
+                                <div class="text-emerald-400 text-sm font-medium mt-0.5">ALL LEVELS WELCOME</div>
+                                <div class="mt-3 text-sm text-zinc-300">
+                                    313 River Road, Falmouth, Virginia
+                                </div>
+                                <div class="mt-4 inline-flex items-center text-xs bg-emerald-900/60 text-emerald-300 px-3.5 py-1 rounded-full">
+                                    <i class="fas fa-map-marker-alt mr-2"></i> Falmouth Field
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Thursday -->
+                        <div class="flex gap-6">
+                            <div class="w-24 flex-shrink-0">
+                                <div class="text-amber-400 font-mono text-sm tracking-widest">THURSDAY</div>
+                                <div class="text-5xl font-black tracking-tighter text-white mt-1">TBD</div>
+                            </div>
+                            <div class="flex-1 pt-1">
+                                <div class="font-semibold text-xl">General / 15s Training</div>
+                                <div class="text-sm text-zinc-400 mt-1">Location and exact time announced via team channels and social media each week.</div>
+                                <div class="mt-4 text-xs text-zinc-400">Check with coaches or officers for the latest details.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side info -->
+            <div class="lg:col-span-2 space-y-6">
+                <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-8">
+                    <div class="uppercase text-xs tracking-widest text-amber-400 font-semibold mb-4">WHAT TO BRING</div>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex gap-x-3"><i class="fas fa-check-circle text-emerald-400 mt-0.5"></i> <span>Boots / cleats</span></li>
+                        <li class="flex gap-x-3"><i class="fas fa-check-circle text-emerald-400 mt-0.5"></i> <span>Mouthguard (recommended)</span></li>
+                        <li class="flex gap-x-3"><i class="fas fa-check-circle text-emerald-400 mt-0.5"></i> <span>Water bottle</span></li>
+                        <li class="flex gap-x-3"><i class="fas fa-check-circle text-emerald-400 mt-0.5"></i> <span>Positive attitude &amp; work ethic</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-8">
+                    <div class="font-semibold mb-3 flex items-center gap-x-2">
+                        <i class="fas fa-info-circle text-amber-400"></i>
+                        <span>New Players</span>
+                    </div>
+                    <p class="text-sm text-zinc-300">No experience necessary. We have players of all backgrounds and skill levels. Reach out to the head coach before your first session so we can pair you with the right group.</p>
+                    
+                    <a href="mailto:headcoach@riverlandsrugby.com" class="mt-5 gold-btn inline-block text-sm px-6 py-2.5 rounded-2xl">Email Head Coach Tyler Stephens</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Note -->
+        <div class="max-w-3xl mx-auto mt-10 text-center text-xs text-zinc-400">
+            Schedule subject to change based on weather, matches, or special events. Always confirm via Instagram <span class="font-mono">@rrfc_golden_boars</span> or team communications.
+        </div>
+    </div>
+
+    <footer class="bg-black border-t border-zinc-800 pt-8 pb-8">
+        <div class="max-w-screen-2xl mx-auto px-6 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-y-2">
+            <div>© 2026 Riverlands Rugby Football Club</div>
+            <a href="index.html" class="hover:text-white">← Back to Home</a>
+        </div>
+    </footer>
+
+    <script>
+        function setupMobileMenu() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                    const icon = btn.querySelector('i');
+                    if (icon) { icon.classList.toggle('fa-bars'); icon.classList.toggle('fa-times'); }
+                });
+            }
+        }
+        window.onload = setupMobileMenu;
+    </script>
+</body>
+</html>
